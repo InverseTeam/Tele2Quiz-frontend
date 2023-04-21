@@ -22,7 +22,7 @@ const MainInfo = ({ setMainInfo }) => {
     question_time: time,
     questions: [22],
     category: 1,
-    age_category: 1,
+    age_category: 2,
     quiz_type: 2,
     additional_question: 23,
     is_published: true,
