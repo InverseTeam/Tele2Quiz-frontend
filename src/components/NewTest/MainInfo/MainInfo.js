@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
-const MainInfo = () => {
+const MainInfo = ({ setMainInfo }) => {
   const [name, setName] = useState();
-  const [theme, setTheme] = useState();
-  const [description, setDescription] = useState();
   const [category, setCategory] = useState();
+  const [description, setDescription] = useState();
+  const [ageCategory, setAgeCategory] = useState();
   const [point, setPoint] = useState(25);
   const [time, setTime] = useState(45);
 
@@ -17,10 +17,20 @@ const MainInfo = () => {
 
   const testData = {
     name,
-    theme,
     description,
+    question_points: point,
+    question_time: time,
+    questions: [22],
+    category: 1,
+    age_category: 1,
+    quiz_type: 2,
+    additional_question: 23,
+    is_published: true,
   };
 
+  // setMainInfo(testData)
+
+  // console.log(testData)
 
   return (
     <div className='flex justify-between mb-6'>
@@ -43,9 +53,9 @@ const MainInfo = () => {
         <input
           className='input-text mb-2'
           placeholder='Тема викторины'
-          value={theme}
+          value={category}
           onChange={(e) => {
-            setTheme(e.target.value);
+            setCategory(e.target.value);
           }}
         />
 
@@ -60,6 +70,9 @@ const MainInfo = () => {
             setDescription(e.target.value);
           }}
         />
+        <button className='btn-main' onClick={() => setMainInfo(testData)}>
+          Сохранить
+        </button>
       </div>
       <div className='w-full flex justify-center'>
         <div className='flex flex-col w-111'>

@@ -9,13 +9,17 @@ const Header = () => {
     <div className='px-22 py-4 flex justify-between items-center'>
       <img src={title} className='h-10' />
       <div className='flex items-center'>
-        <Link to='/tests' className='font-sans-bold mx-8'>Все тесты</Link>
+        <Link to='/tests' className='font-sans-bold mx-8'>
+          Все тесты
+        </Link>
         <Link to='/new-test'>
           <button className='font-sans-bold btn-new-test'>Новый тест</button>
         </Link>
-        <button className='btn-logout mx-2'>
-          <img src={logout} />
-        </button>
+        <a href=''>
+          <button className='btn-logout mx-2'>
+            <img src={logout} />
+          </button>
+        </a>
       </div>
     </div>
   );

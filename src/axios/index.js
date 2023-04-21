@@ -2,6 +2,7 @@ import axios from "axios";
 
 const token = localStorage.getItem("token");
 
+
 const BASE_URL = 'https://tele2quiz.ru/api';
 
 export const instanceLogged = axios.create({

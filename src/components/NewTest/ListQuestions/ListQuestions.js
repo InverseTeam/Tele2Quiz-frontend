@@ -3,15 +3,21 @@ import Question from './Question/Question';
 import { render } from 'react-dom';
 import plus from '../../../img/plus.svg';
 import ExtraQuestion from './ExtraQuestion/ExtraQuestion';
+import { useDispatch } from 'react-redux';
+import { postQuestion } from './Question/postQuestion';
 
 const ListQuestions = () => {
+  const dispatch = useDispatch();
   const [questions, setQuestions] = useState([]);
+  const [questionsId, setquestionsId] = useState([]);
 
   const [questionData, setQuestionData] = useState({});
   const [extraQuestionData, setExtraQuestionData] = useState({});
 
   const addQuestion = (newQuestion) => {
     setQuestions([...questions, newQuestion]);
+    // console.log(questions);
+    // postQuestion(dispatch, );
   };
 
   const renderQuestions = () => {

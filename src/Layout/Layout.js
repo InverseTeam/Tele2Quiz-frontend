@@ -7,8 +7,8 @@ import { useAuth } from '../hooks/useAuth';
 // import "./Layout.scss";
 
 const Layout = () => {
-  // const auth = useAuth();
-  const auth = true;
+  const auth = useAuth();
+  // const auth = true;
 
   return auth ? (
     <div className='w-screen h-screen overflow-auto flex flex-col'>
