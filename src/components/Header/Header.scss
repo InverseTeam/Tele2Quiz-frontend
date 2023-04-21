@@ -1,0 +1,8 @@
+
+.btn-new-test{
+    @apply w-60 h-15 text-mainBlue text-xl border-2 border-mainBlue rounded-xl;
+}
+
+.btn-logout{
+    @apply w-16 h-15 border-2 border-red rounded-xl flex justify-center items-center
+}

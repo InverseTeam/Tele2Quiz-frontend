@@ -1,0 +1,89 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Sans';
+  src: local('Bold'), url('./font/Sans-Bold.otf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Sans';
+  src: local('Mont'), url('./font/Sans-Regular.otf') format('truetype');
+  font-weight: regular;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.font-sans-bold {
+  font-family: 'Sans';
+  font-weight: bold;
+}
+.font-sans-regular {
+  font-family: 'Sans';
+  font-weight: regular;
+}
+
+.btn-main {
+  background-color: #51B2E9;
+  height: 64px;
+  width: 444px;
+  color: white;
+  border-radius: 16px;
+  font-family: 'Mont';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-additional {
+  height: 64px;
+  width: 444px;
+  color: #51B2E9;
+  border: 2px solid #51B2E9;
+  border-radius: 16px;
+  font-family: 'Mont';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.input-text {
+  height: 73px;
+  width: 444px;
+  color: #191919;
+  border-radius: 16px;
+  border: 1.33px solid #51B2E9;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Sans';
+  font-weight: regular;
+}
+
+.textarea {
+  background-color: #f8f9fb;
+  height: 125px;
+  width: 396px;
+  color: #191919;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Sans';
+  font-weight: regular;
+}

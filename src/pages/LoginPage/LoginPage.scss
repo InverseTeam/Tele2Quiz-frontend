@@ -1,0 +1,14 @@
+
+.modal-layout {
+  @apply w-screen h-screen fixed top-0 left-0 flex justify-center items-center;
+
+  .modal {
+    @apply relative z-2 bg-white p-9 rounded-xl flex flex-col justify-center items-center;
+    width: 450px;
+    height: 265px;
+  }
+
+  .background {
+    @apply absolute h-full w-full z-0 bg-black opacity-30;
+  }
+}
