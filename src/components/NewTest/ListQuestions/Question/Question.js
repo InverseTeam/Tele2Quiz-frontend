@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { postQuestion } from './postQuestion';
 
 const Question = ({ setQuestionData, index }) => {
   const [num, setNum] = useState();
@@ -35,14 +36,15 @@ const Question = ({ setQuestionData, index }) => {
       }
     }
 
-    console.log(right);
+    // console.log(right);
     if (
       (text + annotation + answer1 + answer2 + answer3 + answer4 + rightAnswer)
         .length >= 7
     ) {
       // console.log('all');
       document.getElementById('warn-question').style.display = 'none';
-
+      console.log(questionData)
+      postQuestion(questionData);
       setQuestionData(questionData);
       setIsSave(true);
     } else {
