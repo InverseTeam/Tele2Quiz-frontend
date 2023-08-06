@@ -22,12 +22,12 @@ const Login = ({ setModal }) => {
     useSelector((state) => state.user.status) === Statuses.inProgress;
 
   const usersData = useSelector((state) => state.user.user);
-  console.log(auth);
+  // console.log(auth);
   if (auth) {
     navigate('/tests')
   }
-  console.log(isLoading);
-  console.log(usersData);
+  // console.log(isLoading);
+  // console.log(usersData);
 
   // const mist = true;
 
